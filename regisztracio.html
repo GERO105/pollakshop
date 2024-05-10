@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollak shop</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/regiszt.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pollák shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
+                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="regisztracio.html">Regisztráció</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Termékek</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Bejelentkezés</a></li>
+                            <li><a class="dropdown-item" href="#">Kedvencek</a></li>
+                            <li><a class="dropdown-item" href="#">Profil</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Keresés" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main id="main" >
+        <div  class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Regiszráció</h4>
+            <form  class="needs-validation" novalidate="">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Vezetéknév</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Keresztnév</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="username" class="form-label">Felhasználónév</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                            <div class="invalid-feedback">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email <span
+                                class="text-body-secondary">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address" class="form-label">Cím</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Ország</label>
+                        <select class="form-select" id="country" required="">
+                            <option value="">Choose...</option>
+                            <option>USA</option>
+                            <option>Magyarország</option>
+                            <option>Németország</option>
+                            <option></option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="state" class="form-label">Állam</label>
+                        <select class="form-select" id="state" required="">
+                            <option value="">Choose...</option>
+                            <option>California</option>
+
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="zip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Zip code required.
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+
+
+                
+
+                <hr class="my-4">
+
+
+        </div>
+
+        <hr class="my-4">
+
+        
+
+
+
+        </form>
+        
+        </div>
+    </main>
+    <button id="közep" class="learn-more">
+        <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">Küldés</span>
+    </button>
+
+
+</body>
+
+</html>
